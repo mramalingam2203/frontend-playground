@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 150vh; /* 100% of the viewport height */
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc; /* Optional: add borders to see the frames clearly */
+    color: #333;
+    font-size: 1.5em;
+}
+
+/* Specific heights based on the ratio */
+.frame1 {
+    flex: 1; /* Frame 1 takes up 2 parts */
+    background-color: #000000;
+    height: 20px;
+}
+
+.frame2 {
+    flex: 2; /* Frame 2 takes up 1 part */
+    background-color: #f4f0ff;
+}
+
+.frame3 {
+    flex: 2; /* Frame 3 takes up 3 parts */
+    background-color: #f7f7f8;
+}
+
+.frame4 {
+    flex: 1; /* Frame 4 takes up 4 parts */
+    background-color: #b4b4b4;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: left; /* Aligns the buttons to the left */
+    padding: 10px; /* Optional: Adds padding around the buttons */
+}
+
+.btn {
+    margin-right: 10px; /* Adds space between the buttons */
+    padding: 10px 20px; /* Optional: Adds padding inside the buttons */
+    font-size: 1em; /* Optional: Sets the font size */
+    cursor: pointer;
+    border: none; /* Removes the default border */
+    background-color: #007BFF; /* Sets the background color */
+    color: white; /* Sets the text color */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Changes background color on hover */
+}
+
+
+.divider-container {
+    display: flex;
+    justify-content: space-around; /* Distributes space around the dividers */
+    width: 80%; /* Width of the container */
+}
+
+.divider {
+    background-color: #000000; /* Blue background color */
+    color: white; /* White text color */
+    padding: 20px; /* Padding inside the dividers */
+    margin: 10px; /* Margin around the dividers */
+    flex: 1; /* Flex property to allow equal width */
+    text-align: center; /* Center text inside the dividers */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.divider:nth-child(odd) {
+    background-color: #000000; /* Darker blue for odd dividers */
+}
+
+.styled-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 0px 0;
+    font-size: 1em;
+    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.table-image {
+    width: 100px; /* Set the width of the images */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image within the cell */
+}
