@@ -16,13 +16,13 @@ body {
 
 /* Specific heights based on the ratio */
 .frame1 {
-    flex: 1; /* Frame 1 takes up 2 parts */
+    flex: 0.25; /* Frame 1 takes up 2 parts */
     background-color: #000000;
     height: 20px;
 }
 
 .frame2 {
-    flex: 2; /* Frame 2 takes up 1 part */
+    flex: 1; /* Frame 2 takes up 1 part */
     background-color: #f4f0ff;
 }
 
@@ -32,8 +32,9 @@ body {
 }
 
 .frame4 {
-    flex: 1; /* Frame 4 takes up 4 parts */
-    background-color: hsl(0, 100%, 100%);
+    flex: 0.75; /* Frame 4 takes up 4 parts */
+    background-color: hwb(0 6% 94%);
+    
 }
 
 
@@ -80,7 +81,8 @@ body {
 }
 
 .styled-table {
-    width: 90%;
+    width: 100%;
+    height : 100%;
     border-collapse: collapse;
     margin: 0px 0;
     font-size: 0.60em;
@@ -117,4 +119,11 @@ body {
     height: auto; /* Maintain the aspect ratio */
     display: block; /* Ensure the image is displayed as a block element */
     margin: 0 auto; /* Center the image within the cell */
+}
+
+.ulist {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    color : white
 }
