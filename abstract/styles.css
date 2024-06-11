@@ -33,7 +33,7 @@ body {
 
 .frame4 {
     flex: 1; /* Frame 4 takes up 4 parts */
-    background-color: #b4b4b4;
+    background-color: hsl(0, 100%, 100%);
 }
 
 
@@ -83,7 +83,7 @@ body {
     width: 90%;
     border-collapse: collapse;
     margin: 0px 0;
-    font-size: 1em;
+    font-size: 0.60em;
     font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
